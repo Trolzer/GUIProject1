@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="User Registration Form" />
+      <Label contentDisplay="RIGHT" text="Full Name:">
+         <graphic>
+            <TextField fx:id="nameField" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="Email:">
+         <graphic>
+            <TextField fx:id="emailField" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="Gender:">
+         <graphic>
+            <RadioButton fx:id="maleRadio" contentDisplay="RIGHT" mnemonicParsing="false" text="Male" toggleGroup="$genderRadio">
+               <graphic>
+                  <RadioButton fx:id="femaleRadio" mnemonicParsing="false" text="Felmale">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="genderRadio" />
+                     </toggleGroup></RadioButton>
+               </graphic>
+            </RadioButton>
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="Subscribe to Newsletter?">
+         <graphic>
+            <CheckBox fx:id="subscribeCheckBox" mnemonicParsing="false" />
+         </graphic>
+      </Label>
+      <Button fx:id="submitButton" mnemonicParsing="false" text="Submit" />
+   </children>
+</VBox>
